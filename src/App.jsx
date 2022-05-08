@@ -117,7 +117,7 @@ function App() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
     // AxesHelper
-    const axesHelper = new THREE.AxesHelper(590);
+    const axesHelper = new THREE.AxesHelper(50);
     scene.add(axesHelper);
 
     /**
@@ -142,7 +142,6 @@ function App() {
     cubeFolder2.add(mesh1.position, "z").min(0).max(30).step(0.01).name("z");
     cubeFolder2.add(mesh1, "visible");
     cubeFolder2.close();
-    console.log(mesh);
     gui.add(material, "wireframe");
 
     window.addEventListener("keydown", (event) => {
