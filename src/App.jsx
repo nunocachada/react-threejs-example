@@ -6,6 +6,12 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import gsap from "gsap";
 import * as dat from "lil-gui";
 import "./App.css";
+import Imag1 from "./images/4.jpg";
+import Imag2 from "./images/4.png";
+import Imag3 from "./images/5.jpg";
+import Imag4 from "./images/7.jpg";
+import Imag5 from "./images/8.jpg";
+import Imag6 from "./images/9.jpg";
 
 function App() {
   useEffect(() => {
@@ -38,15 +44,14 @@ function App() {
 
     // Material - One image for each face of the cube
     const loader = new THREE.TextureLoader();
-    loader.setPath("src/images/");
 
     const material2 = [
-      new THREE.MeshBasicMaterial({ map: loader.load("4.png") }),
-      new THREE.MeshBasicMaterial({ map: loader.load("4.jpg") }),
-      new THREE.MeshBasicMaterial({ map: loader.load("5.jpg") }),
-      new THREE.MeshBasicMaterial({ map: loader.load("7.jpg") }),
-      new THREE.MeshBasicMaterial({ map: loader.load("8.jpg") }),
-      new THREE.MeshBasicMaterial({ map: loader.load("9.jpg") }),
+      new THREE.MeshBasicMaterial({ map: loader.load(Imag1) }),
+      new THREE.MeshBasicMaterial({ map: loader.load(Imag2) }),
+      new THREE.MeshBasicMaterial({ map: loader.load(Imag3) }),
+      new THREE.MeshBasicMaterial({ map: loader.load(Imag4) }),
+      new THREE.MeshBasicMaterial({ map: loader.load(Imag5) }),
+      new THREE.MeshBasicMaterial({ map: loader.load(Imag6) }),
     ];
 
     //End
